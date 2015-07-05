@@ -1,0 +1,15 @@
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*~
+*.synctex.gz
+/ll-cat-paper.pdf
+/ll-stat-paper.pdf
+/spiral-paper.pdf
+/test-poppler
+/.DS_Store
+/Icon*
+/auto
