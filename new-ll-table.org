@@ -1,0 +1,113 @@
+* Reports of Skype meetings
+** [2016-09-28 Wed 10:30]
++ We revised the descriptions of the SW group
+  + Complete as far as 042-628
++ The NW group still needs to be checked over
++ 
+
+
+* Table of arcs 
+
+|         Source | Proplyd             | Star                 | Arc                     | Notes                                                                              |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | LV KNOT GROUP                                                                      |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|  158-323 (LV5) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  161-324 (LV4) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  163-317 (LV3) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+| 166-316 (LV2b) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  167-317 (LV2) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|        168-328 | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  168-326 (LV1) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTHEAST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        169-338 | \Ricci{}            |                      | New                     | Very faint, well-defined                                                           |
+| 177-341 (HST1) | \Ricci{}            |                      | Bally (1998)            | Very faint, well-defined                                                           |
+|        180-331 | \Ricci{}            |                      | Bally (1998)            | Highly asymmetric                                                                  |
+|        189-329 | \Ricci{}            |                      | New                     | Very diffuse, north wing larger than south                                         |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | NORTH GROUP                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        142-301 | \Ricci{}            |                      | New                     | Longest proplyd tail pointg out \Theta^1 Ori A, very faint arc, non-continuous curvature |
+|        154-225 | \Ricci{}            |                      | New                     | Very faint, lumpy                                                                  |
+|        154-240 | \Ricci{}            |                      | New                     | Inner edge well-defined                                                            |
+|        159-221 | New                 |                      | New                     | Outer edge very diffuse, axis deviates from radial direction                       |
+|        163-222 | \Ricci{}            |                      | New                     | Very faint, small, eastern well-defined, western superimposed                      |
+|        165-235 | \Ricci{}            |                      | \Bally{}                | Very faint                                                                         |
+|        170-249 | \Ricci{}            |                      | New                     | Very faint                                                                         |
+|        173-236 | \Ricci{}            |                      | New                     | Designated 174-236 in \Bally{}, irregular and wavy proplyd tail                    |
+|        178-258 | \Ricci{}            |                      | New                     | Well-defined, faint                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | NORTHWEST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4578-251 | No                  |                      | New                     | Asymmetric, double shell, outer shell fainter                                      |
+|        049-143 | \Ricci{}            |                      | New                     | Thick, circular, wings open,                                                       |
+|        051-024 | New                 |                      | New                     | Two shells                                                                         |
+|        072-134 | \Ricci{}            |                      | New                     | Designated 072-135 in \ODell{}, complex morphology                                 |
+|        073-227 | \Ricci{}            |                      | \Bally{}                | 
+|        074-229 | ?                   |                      | New                     | Probably binary of 073-227                                                         |
+|        101-233 | \Ricci{}            |                      | New                     | Designated 102-233 in \ODell{}, cumply shell                                       |
+|        102-157 | New                 |                      | New                     | Very faint arc, proplyd with very short tail                                       |
+|        106-245 | ?                   |                      | New                     | Outside HH 202                                                                     |
+|        109-246 | \Ricci{}            |                      | New                     | Designated 109-247 in \Bally{}, wing open, complex region                          |
+|        124-131 | \Ricci{}            |                      | New                     | Designated 123-132 in \ODell{}, very faint, not H\alpha                                 |
+|        206-043 | No                  |                      | New                     | Very faint, narrow                                                                 |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTHWEST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4582-635 | \Ricci{}            |                      | New                     | Very faint                                                                         |
+|       4596-400 | \Ricci{}            |                      | \Bally{}                | Designated 000-400 in \Bally{}                                                     |
+|        005-514 | \Ricci{}            |                      | \Bally{}                | Southeast wing has multiple filaments                                              |
+|        012-407 | No                  |                      | \Bally{}                | Thick, diffuse arc                                                                 |
+|        014-414 | No                  |                      | \Bally{}                | Double central star                                                                |
+|        022-635 | No                  |                      | New                     | 
+|        030-524 | ?                   |                      | \Bally{}                | Flat, asymmetric arc, apparent proplyd tail                                        |
+|        041-637 | No                  | Da Rio et al. 2009   | New                     | West wing of arc superimposed on unrelated filament                                |
+|        042-628 | \Ricci{}            |                      | New                     | Proplyd designated 038-627 in \Ricci{}.  Possible jet.                            |
+|        044-527 | \Ricci{}            |                      | \Bally{}                | Asymmetric, fait, small. Proplyd with jet                                          |
+|  056-519 (LL1) | No                  |                      | Gull & Sofia (1979)     | Wings blueshifted, associated with HH88                                            |
+|        065-502 | New                 |                      | New                     | Very faint, apparent proplyd with short tail                                       |
+|        069-601 | \Ricci{}            |                      | \Bally{}                | Shape similar to LL1                                                               |
+|        083-435 | New                 |                      | New                     | Very faint, diffuse outer edge                                                     |
+|        117-421 | \Ricci{}            |                      | New                     | Very faint, inner edge only                                                        |
+|        121-434 | \Ricci{}            |                      | New                     | Compact                                                                            |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | FAR WEST GROUP                                                                     |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
+| 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
+| 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric, bearby perpendicular to HH 505                                         |
+| 4427-838 (LL4) | Bally et al. (2006) |                      | Bally & Reipurth (2001) |                                                                                    |
+|       4468-605 | \Ricci{}            |                      | Bally et al. (2006)     | Flared                                                                             |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTH GROUP                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       066-3251 | \Ricci{}            |                      | New                     | Clearly in F555W filter                                                            |
+|       116-3101 | ?                   |                      | New                     | Possible proplyd tail, sharply, wing closed                                        |
+|       119-3155 | No                  |                      | New                     | Faint arc to the north                                                             |
+|       136-3057 | No                  |                      | New                     | Very diffuse                                                                       |
+|       138-3024 | No                  |                      | New                     | Thin, strong in blue and green filters                                             |
+|       203-3039 | No                  |                      | New                     | Faint, very open                                                                   |
+|       261-3018 | No                  |                      | New                     | Large, flat, diffuse, bright inner rim                                             |
+|        266-558 | \Ricci{}            |                      | \Bally{}                | Double shell, knotty and open wings                                                |
+|        305-811 | ?                   |                      | \Bally et al. (2006)    | Asymmetric, extremely faint, probably proplyd tail                                 |
+|       308-3036 | Bally et al. (2006) |                      | Bally et al. (2006)     | Nearly circular inner shock                                                        |
+|  315-816 (LL5) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Double shell, bright inner rim                                                     |
+| 329-3021 (LL6) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Wings opened and extended, one-side jet                                            |
+|       344-3020 | Bally et al. (2006) |                      | Bally et al. (2006)     | Very faint, bipolar jet                                                            |
+| 351-3349 (LL7) | \Ricci{}            |                      | Bally & Reipurth (2001) | Perpendicular jet, wings opened                                                    |
+|       362-3137 | New                 | Da Rio et al. (2009) | New                     | Doble shell                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | INTERPROPLYD SHELLS                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        066-652 | \Ricci{}            |                      | Reipurth (2007)         | Small, primary 066-652N                                                            |
+|        160-350 | \Ricci{}            |                      | Henney (2002)           | Primary 159-350                                                                    |
+|        162-456 | ?                   |                      | Reipurth (2007)         | Primary 162-456NE                                                                  |
+|       168-326N | \Ricci{}            |                      | Graham et al (2002)     | Primary 168-326 (LV1)                                                              |
+|        173-341 | \Ricci{}            |                      | New?                    | Primary 177-341 (HST1)                                                             |
+|        175-321 | No                  |                      | New                     | Primary th1D                                                                       |
+|        204-330 | \Ricci{}            |                      | New                     | Primary 205-330, very similar to 168-326                                           |
+* Additional notes on particular objects
+** 308-3036
+Superimposed on unrelated jet-driven bowshock from LL6
