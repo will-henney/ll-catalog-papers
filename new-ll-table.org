@@ -3,7 +3,9 @@
 + We revised the descriptions of the SW group
   + Complete as far as 042-628
 + The NW group still needs to be checked over
-+ 
+** [2016-10-05 Wed 10:54]
++ Complete as far as end of SW group
++ Severeal objects have been moved to the "ambiguous" category
 
 
 * Table of arcs 
@@ -45,7 +47,7 @@
 |        049-143 | \Ricci{}            |                      | New                     | Thick, circular, wings open,                                                       |
 |        051-024 | New                 |                      | New                     | Two shells                                                                         |
 |        072-134 | \Ricci{}            |                      | New                     | Designated 072-135 in \ODell{}, complex morphology                                 |
-|        073-227 | \Ricci{}            |                      | \Bally{}                | 
+|        073-227 | \Ricci{}            |                      | \Bally{}                |                                                                                    |
 |        074-229 | ?                   |                      | New                     | Probably binary of 073-227                                                         |
 |        101-233 | \Ricci{}            |                      | New                     | Designated 102-233 in \ODell{}, cumply shell                                       |
 |        102-157 | New                 |                      | New                     | Very faint arc, proplyd with very short tail                                       |
@@ -61,20 +63,16 @@
 |        005-514 | \Ricci{}            |                      | \Bally{}                | Southeast wing has multiple filaments                                              |
 |        012-407 | No                  |                      | \Bally{}                | Thick, diffuse arc                                                                 |
 |        014-414 | No                  |                      | \Bally{}                | Double central star                                                                |
-|        022-635 | No                  |                      | New                     | 
+|        022-635 | No                  |                      | New                     |                                                                                    |
 |        030-524 | ?                   |                      | \Bally{}                | Flat, asymmetric arc, apparent proplyd tail                                        |
 |        041-637 | No                  | Da Rio et al. 2009   | New                     | West wing of arc superimposed on unrelated filament                                |
-|        042-628 | \Ricci{}            |                      | New                     | Proplyd designated 038-627 in \Ricci{}.  Possible jet.                            |
-|        044-527 | \Ricci{}            |                      | \Bally{}                | Asymmetric, fait, small. Proplyd with jet                                          |
-|  056-519 (LL1) | No                  |                      | Gull & Sofia (1979)     | Wings blueshifted, associated with HH88                                            |
-|        065-502 | New                 |                      | New                     | Very faint, apparent proplyd with short tail                                       |
-|        069-601 | \Ricci{}            |                      | \Bally{}                | Shape similar to LL1                                                               |
-|        083-435 | New                 |                      | New                     | Very faint, diffuse outer edge                                                     |
-|        117-421 | \Ricci{}            |                      | New                     | Very faint, inner edge only                                                        |
-|        121-434 | \Ricci{}            |                      | New                     | Compact                                                                            |
+|        042-628 | \Ricci{}            |                      | New                     | Proplyd designated 038-627 in \Ricci{}.  Possible jet.                             |
+|        044-527 | \Ricci{}            |                      | \Bally{}                | Asymmetric. Jet parallel to proplyd axis.                                          |
+|  056-519 (LL1) | No                  |                      | Gull & Sofia (1979)     | Prototypical object.  Bright T Tauri star with jet (HH 888)                        |
+|        069-601 | \Ricci{}            |                      | \Bally{}                | Well-defined parabolic arc. Shape similar to LL1                                   |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | FAR WEST GROUP                                                                     |
-|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|----------------+---------------------+----------------------+-------------------------+------------------------------------<------------------------------------------------|
 |       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
 | 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
 | 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric, bearby perpendicular to HH 505                                         |
@@ -108,6 +106,17 @@
 |        173-341 | \Ricci{}            |                      | New?                    | Primary 177-341 (HST1)                                                             |
 |        175-321 | No                  |                      | New                     | Primary th1D                                                                       |
 |        204-330 | \Ricci{}            |                      | New                     | Primary 205-330, very similar to 168-326                                           |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | PROBLEMATIC OBJECTS                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        065-502 | New                 |                      | New                     | Questionable detection of arc. Proplyd with short tail                             |
+|        083-435 | New                 |                      | New                     | Very faint, diffuse outer edge                                                     |
+|        117-421 | \Ricci{}            |                      | New                     | Very faint, inner edge only                                                        |
+|        121-434 | \Ricci{}            |                      | New                     | Compact                                                                            |
+|        131-046 |                     |                      |                         |                                                                                    |
+|        212-400 |                     |                      |                         |                                                                                    |
+|                |                     |                      |                         |                                                                                    |
+|                |                     |                      |                         |                                                                                    |
 * Additional notes on particular objects
 ** 308-3036
 Superimposed on unrelated jet-driven bowshock from LL6
