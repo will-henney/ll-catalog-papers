@@ -23,6 +23,8 @@
 + Really finish SW group
 
 ** [2016-11-09 Wed]
++ Finished Far West group
+
 * Table of arcs 
 
 |         Source | Proplyd             | Star                 | Arc                     | Notes                                                                              |
@@ -90,9 +92,9 @@
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
 | 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
-| 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric, bearby perpendicular to HH 505                                         |
-| 4427-838 (LL4) | Bally et al. (2006) |                      | Bally & Reipurth (2001) |                                                                                    |
-|       4468-605 | \Ricci{}            |                      | Bally et al. (2006)     | Flared                                                                             |
+| 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric arc; southern wing affected by bipolar jet (HH 505)                     |
+| 4427-838 (LL4) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Outer wings may be affected by bipolar jet                                         |
+|       4468-605 | \Ricci{}            |                      | Bally et al. (2006)     | Bipolar jet parallel to axis                                                       |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | SOUTH GROUP                                                                        |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
