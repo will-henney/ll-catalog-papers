@@ -6,8 +6,23 @@
 ** [2016-10-05 Wed 10:54]
 + Complete as far as end of SW group
 + Severeal objects have been moved to the "ambiguous" category
+** [2016-10-14 Fri 12:10]
++ 142-301 (N group), 051-024 (NW group) and 101-233 (NW group) : three cases that seems to have external "arc" with shape similar to the one that was traced (internal)
+  It has to be mentioned. Where?
++ We revised all the groups looking for objects with ambiguous determination
+  + 173-236 (N group) - is moved to ambiguous (A) group, it is not clear if the structure is an arc or a hole
+  + 106-245 (NW group) - stays at NW group
+  + w014-414 (SW group) - stays at SW group, the tracing of the arc has to be reviewed
+  + 041-637 (SW group) - stays at SW. It is not a filamente due its shape is different from what is in its environment, this can be taken as evidence that the structure is related to the star.
+    The structure at the right has to be mentioned in the description.
+  + 066-652 (S group) - it is not clear, is moved to A group
+  + 131-046 (ambiguous group) - stays at A group, the "arc" could be just a continuos area that is being crossed by an extintion filament
++ All the other cases that already were moved to the A group stays there.
+** [2016-10-26 Wed]
++ Finished moving objects to the problematic group
++ Really finish SW group
 
-
+** [2016-11-09 Wed]
 * Table of arcs 
 
 |         Source | Proplyd             | Star                 | Arc                     | Notes                                                                              |
@@ -38,7 +53,6 @@
 |        163-222 | \Ricci{}            |                      | New                     | Very faint, small, eastern well-defined, western superimposed                      |
 |        165-235 | \Ricci{}            |                      | \Bally{}                | Very faint                                                                         |
 |        170-249 | \Ricci{}            |                      | New                     | Very faint                                                                         |
-|        173-236 | \Ricci{}            |                      | New                     | Designated 174-236 in \Bally{}, irregular and wavy proplyd tail                    |
 |        178-258 | \Ricci{}            |                      | New                     | Well-defined, faint                                                                |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | NORTHWEST GROUP                                                                    |
@@ -54,6 +68,7 @@
 |        106-245 | ?                   |                      | New                     | Outside HH 202                                                                     |
 |        109-246 | \Ricci{}            |                      | New                     | Designated 109-247 in \Bally{}, wing open, complex region                          |
 |        124-131 | \Ricci{}            |                      | New                     | Designated 123-132 in \ODell{}, very faint, not H\alpha                                 |
+|        132-053 | No                  |                      | New                     | Overlapping extinction filaments                                                   |
 |        206-043 | No                  |                      | New                     | Very faint, narrow                                                                 |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | SOUTHWEST GROUP                                                                    |
@@ -72,7 +87,7 @@
 |        069-601 | \Ricci{}            |                      | \Bally{}                | Well-defined parabolic arc. Shape similar to LL1                                   |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | FAR WEST GROUP                                                                     |
-|----------------+---------------------+----------------------+-------------------------+------------------------------------<------------------------------------------------|
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
 | 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
 | 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric, bearby perpendicular to HH 505                                         |
@@ -99,7 +114,6 @@
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |                |                     |                      |                         | INTERPROPLYD SHELLS                                                                |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
-|        066-652 | \Ricci{}            |                      | Reipurth (2007)         | Small, primary 066-652N                                                            |
 |        160-350 | \Ricci{}            |                      | Henney (2002)           | Primary 159-350                                                                    |
 |        162-456 | ?                   |                      | Reipurth (2007)         | Primary 162-456NE                                                                  |
 |       168-326N | \Ricci{}            |                      | Graham et al (2002)     | Primary 168-326 (LV1)                                                              |
@@ -110,13 +124,27 @@
 |                |                     |                      |                         | PROBLEMATIC OBJECTS                                                                |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
 |        065-502 | New                 |                      | New                     | Questionable detection of arc. Proplyd with short tail                             |
+|        066-652 | \Ricci{}            |                      | Reipurth (2007)         | Small, primary 066-652N                                                            |
 |        083-435 | New                 |                      | New                     | Very faint, diffuse outer edge                                                     |
 |        117-421 | \Ricci{}            |                      | New                     | Very faint, inner edge only                                                        |
 |        121-434 | \Ricci{}            |                      | New                     | Compact                                                                            |
-|        131-046 |                     |                      |                         |                                                                                    |
-|        212-400 |                     |                      |                         |                                                                                    |
-|                |                     |                      |                         |                                                                                    |
-|                |                     |                      |                         |                                                                                    |
+|        131-046 | \Ricci{}            |                      | New                     | Possible broad shell, confusion with extinction filaments                          |
+|        173-236 | \Ricci{}            |                      | New                     | Designated 174-236 in \Bally{}, irregular and wavy proplyd tail                    |
+|        212-400 | \Ricci{}            |                      | New                     | Weak evidence for inner edge only                                                  |
+
+
+
+
+* TODO Objects with multiple arcs
++ We should maybe discuss these
+  + 142-301 (N group),
+  + 051-024 (NW group)
+  + and 101-233 (NW group) 
++ Three cases that seems to have external "arc" with shape similar to the one that was traced (internal)
+
+
+* TODO Make a separate .bib file with the references that we need
+
 * Additional notes on particular objects
 ** 308-3036
 Superimposed on unrelated jet-driven bowshock from LL6
