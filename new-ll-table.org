@@ -24,6 +24,8 @@
 
 ** [2016-11-09 Wed]
 + Finished Far West group
++ Started on North group, but not much progress
++ Discovered some new objects in the south east
 
 * Table of arcs 
 
