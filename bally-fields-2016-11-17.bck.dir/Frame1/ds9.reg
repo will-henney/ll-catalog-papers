@@ -1,0 +1,6 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+box(83.704421,-5.4407389,2.61274",1.86624",0) # color=yellow text={LL 4491-627}
+box(83.729186,-5.4496824,1.9769297",1.8197689",0) # color=yellow text={LL 4550-659}
+box(83.721067,-5.4410611,2.61274",1.86624",0) # color=yellow text={LL 4531-628}

@@ -26,7 +26,24 @@
 + Finished Far West group
 + Started on North group, but not much progress
 + Discovered some new objects in the south east
+** [2016-11-17 Thu 09:10]-[2016-11-17 Thu 11:30]
++ Discovered 6 new arcs, in between SW and Far-W groups
+  + Might be best to merge these two groups
++ Looked for new arcs in the outer Bally ACS fields
+  + Started in the south, working north
+    :                     (11)
+    :         (3) .. (10) ..  (19)
+    :      (2) .. (9) .. 18 .. (26)
+    :         1 .. 17 ..  25
+    :      (6) .. 16 .. (24)
+    :   (7) .. (15) .. (23)
+    : 8 .. 14 .. (22)
+    :   13 .. 21
+    : 12 .. 20
+  + Fields still to check are in (parentheses)
 
+    
+  + Finished
 * Table of arcs 
 
 |         Source | Proplyd             | Star                 | Arc                     | Notes                                                                              |
@@ -95,6 +112,7 @@
 |       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
 | 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
 | 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric arc; southern wing affected by bipolar jet (HH 505)                     |
+|       4417-653 | No                  |                      | New                     | NEW OBJECT 16 Nov 2016                                                             |
 | 4427-838 (LL4) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Outer wings may be affected by bipolar jet                                         |
 |       4468-605 | \Ricci{}            |                      | Bally et al. (2006)     | Bipolar jet parallel to axis                                                       |
 |----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
@@ -152,3 +170,54 @@
 * Additional notes on particular objects
 ** 308-3036
 Superimposed on unrelated jet-driven bowshock from LL6
+* Checking remaining Bally fields
++ [X] 20
+  + No arcs
+  + Some HH knots in the S that don't seem to be mentioned anywhere
++ [X] 12
+  + No arcs
++ [X] 13
+  + No arcs
++ [X] 21
+  + No arcs
++ [X] 08
+  + Only arcs we already discovered
++ [X] 14
+  + Two previous detections are certainly arcs:
+    + 203-3039
+    + 116-3101
+  + Four doubtful ones that are already in the catalog
+  + No new detections
++ [ ] 22
+
+* New arc discoveries
+1. [X] 4417-653
+   + [2016-11-16 Wed] Discovered this while looking at jet knots for the Alba project
+   + Located 20 arcsec to SE of LL3
+   + Very strange that I never saw it before
+2. [X] 4491-627
+   + 5:34:49.074 -5:26:26.65
+   + Looks legit
+     + But there is another bowshock nearby, that looks like a HH object, so must be careful
+3. [X] 4550-659
+   + Coordinates 5:34:55.026 -5:26:58.88
+   + This is a definite detection
+   + Has jet knots too
+     + Possibly two jets. Spike to NW and smaller one to SE.  Knots to E.
+     + Also, possible bowshock overlying end of S wing of arc
+4. [X] 4531-628
+   + 5:34:53.072 -5:26:27.51
+   + Pretty definite that the arc is real
+   + Arc is very small (R0  ~= 0.64 arcsec)
+5. [X] 4520-419
+   + 5:34:52.005 -5:24:18.86
+   + Beautiful arc (R0 ~= 1.2 arcsec)
+     + Wide radius of curvature
+   + Looks like it might be a proplyd
+     + Small stubby tail
+6. [X] 4505-336
+   + 5:34:50.484 -5:23:35.52
+   + N arm of the arc is missing
+   + Very faint curved jet seems to go N of star
+     + May curve through 90 degrees and end in a bow shock
+
