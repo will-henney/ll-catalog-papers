@@ -1,3 +1,20 @@
+* Return to LL catalog 2019
++ This time I am going to finish it
+
+
+** Plan of action
+1. Finish checking for new objects in the Bally fields
+   - Where are the files?
+   - Presumably on external disk
+2. Re-organize the groups
+   - Maybe merge SW and FW groups into a "West" group
+3. Do arc fits for the new objects
+4. Reorganize the tables
+   - Would it be better to have a single table of all sources, ordered by RA?
+5. Division into papers
+   - Catalog paper should not have much else
+     - Where to publish? RevMex maybe
+
 * Reports of Skype meetings
 ** [2016-09-28 Wed 10:30]
 + We revised the descriptions of the SW group
