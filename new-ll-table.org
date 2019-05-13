@@ -6,14 +6,27 @@
 1. Finish checking for new objects in the Bally fields
    - Where are the files?
    - Presumably on external disk
+     - [X] Copied all the Baly fields that end ~wcs.fits~
+     - [ ] But need to get some more since the list is not complete
 2. Re-organize the groups
    - Maybe merge SW and FW groups into a "West" group
 3. Do arc fits for the new objects
-4. Reorganize the tables
+   - Do we want to automate the arc tracing
+     - This might not be possible for all sources - is this good or bad?
+     - It would automatically weed out more problematic sources
+4. Association with stellar sources
+   - Write a program to do this using ~astroquery~ perhaps
+5. Reorganize the tables
    - Would it be better to have a single table of all sources, ordered by RA?
-5. Division into papers
+6. Regenerate the figures
+   - Find where they come from in the other projects
+7. Division into papers
    - Catalog paper should not have much else
      - Where to publish? RevMex maybe
+     - Then we could put the catalog itself on Vizier
+   - Second paper with the correlations
+     - We have a correction to the f658n fluxes to remove [N II]
+   - Third paper with the spiral pattern
 
 * Reports of Skype meetings
 ** [2016-09-28 Wed 10:30]
