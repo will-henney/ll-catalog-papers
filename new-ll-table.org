@@ -6,7 +6,7 @@
 1. Finish checking for new objects in the Bally fields
    - Where are the files?
    - Presumably on external disk
-     - [X] Copied all the Baly fields that end ~wcs.fits~
+     - [X] Copied all the Bally fields that end ~wcs.fits~
      - [ ] But need to get some more since the list is not complete
 2. Re-organize the groups
    - Maybe merge SW and FW groups into a "West" group
