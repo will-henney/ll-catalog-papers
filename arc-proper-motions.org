@@ -22,6 +22,11 @@
   + Star seems to have a proper motion that is not shared with the bow shock
 * Proper motions in HST 1 - 177-341
 + This now seems to be low, < 3 km/s
+* Proper motions in LV2
++ This has lots of moving filaments
++ But they are not the principal arc, rather they are inside it
++ Seem to be coming from half way between the two proplyds
+
 * Other objects with interesting motions
 ** 160-353 - the spinning cartwheel
 ** 162-341 - collision of two shocks

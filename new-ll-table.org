@@ -1,3 +1,20 @@
+
+* New papers on proplyds
+
+** Sheehan:2016a - A VLA Survey for Faint Compact Radio Sources in the Orion Nebula Cluster
++ 2016ApJ...831..155S
++ Gives radio fluxes at 6cm, 3cm, 1.3cm for many sources
+
+
+** Boyden:2020a - Protoplanetary Disks in the Orion Nebula Cluster: Gas Disk Morphologies and Kinematics as seen with ALMA
++ 2020ApJ...894...74B
++ CO and HCO+ observations of several disks in proplyds
++ Includes 177-341W
++ Gas radii are generally larger than dust radii
++ Determine kinematic masses for the stars
+
+
+** Forbrich:2016a - The Population of Compact Radio Sources in the Orion Nebula Cluster
 * Return to LL catalog 2019
 + This time I am going to finish it
 
