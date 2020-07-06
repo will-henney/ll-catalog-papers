@@ -1,20 +1,71 @@
 
-* New papers on proplyds
+* Return to LL catalog again 2020
 
-** Sheehan:2016a - A VLA Survey for Faint Compact Radio Sources in the Orion Nebula Cluster
-+ 2016ApJ...831..155S
-+ Gives radio fluxes at 6cm, 3cm, 1.3cm for many sources
+** Organization of material
++ This repo
+  + https://github.com/will-henney/ll-catalog-papers
+  + Incudes the following:
+    + the catalog paper itself
+    + the latest tables of bow shocks
+    + discussion of our plans and logs of work done
++ The repo with most of the original work
+  + https://github.com/will-henney/orion-bowshock-catalog
+  + That is where we can carry on doing the main work
+  + Although it is very disorganised
+  + Everything is documented in ~luis-angel-ll.org~
+  + We need to be careful with the size of the repo
+    + Limit for Github is 1 GB
+    + Currently repo is 724 MB
+    + But folder itself is 3GB on my disk, so there must be a lot of things that are excluded
+      + The ~.gitignore~ excludes everything, then re-allows some specific folders
+      + So it maybe that the repo is missing some things that Luis needs
+        + All the folders like ~j8oc01010_wcs~ are missing
+          + They can be quite large since they contain lots of FITS and PDF files (about 1 MB each)
+          + [ ] Need to find a way to share these folders
+          + Or possibly, Luis can regenerate these hiimdelf locally
++ Large FITS image files
+  + We cannot keep very large files (> 100 MB) in the git repo
+  + This includes the Bally images (300 MB) and the Robberto images (1 GB)
+  + Most of these files are in the ~OrionTreasury/~ folder
+    + Total size is 114 GB
+    + For Will, this is at [[file:~/Work/OrionTreasury/]]
+    + For Luis it is at *where?*
 
 
-** Boyden:2020a - Protoplanetary Disks in the Orion Nebula Cluster: Gas Disk Morphologies and Kinematics as seen with ALMA
-+ 2020ApJ...894...74B
-+ CO and HCO+ observations of several disks in proplyds
-+ Includes 177-341W
-+ Gas radii are generally larger than dust radii
-+ Determine kinematic masses for the stars
+** Things for Luis Ángel to do
+
+*** Find info on stellar sources
++ I already did some work on this
+  + See [[id:F7BCAB63-E507-48FD-B594-09F82ED6F7A3][Find the coincident stellar sources for each arc]] in ~luis-angel-ll.org~
+  + Searched lots of tables from NIT, optical, x-ray papers
++ But a complementary way would be to use ~astroquery~ to search simbad for each source
+
+*** Do all measurements for the new sources
++ There seem to be various steps in generating the table of sources
+  1. ~arcs-summary.tab~ generated how?
+  2. Combine Luis and Jorge source to give ~arcs-summary-merge.tab~
+     + This is then used in various programs in [[id:95244DE6-CB85-41CB-A6AC-286BEFE625B3][Look at correlations]] to make figures
+     + But uses ~problem-source.txt~ and ~interproplyd.txt~ to remove ones that aren't regular bow shocks
+  3. Remove repetitions to give ~arcs-summary-unique.tab~
+     + This is then used to make the table of stellar sources
+  4. There is also an ~arcs-summary-classify.tab~
+     + [ ] How is this related?
+  5. Latex tables are generated in [[id:F5BEFDCB-D776-4CD5-B6BA-E93439AF7A8F][Output latex figures with the individual sources]]
+     + This writes files to the ~catalog-paper/~ folder of the ~orion-bowshock-catalog~ repo
+     + They will have to be copied to this repo by hand
 
 
-** Forbrich:2016a - The Population of Compact Radio Sources in the Orion Nebula Cluster
+
+** Things for Will to do
+
+*** TODO Decide on whether to change the groupings
+
+*** TODO Are there any more Bally fields to check through?
+*** TODO Make new figures for each group
++ These are the RGB high-pass filtered Robberto images that are generated in [[id:171A91D5-C0D6-4411-9DB2-C1AB76D18E61][New images of each group]]
++ I need to do them for the other groups too (just SW group so far)
++ And stitch them together and annotate then in Affinity Designer
+*** TODO Decide whether to do do alatude/planitude
 * Return to LL catalog 2019
 + This time I am going to finish it
 
@@ -52,7 +103,7 @@
 + The NW group still needs to be checked over
 ** [2016-10-05 Wed 10:54]
 + Complete as far as end of SW group
-+ Severeal objects have been moved to the "ambiguous" category
++ Several objects have been moved to the "ambiguous" category
 ** [2016-10-14 Fri 12:10]
 + 142-301 (N group), 051-024 (NW group) and 101-233 (NW group) : three cases that seems to have external "arc" with shape similar to the one that was traced (internal)
   It has to be mentioned. Where?
@@ -267,4 +318,22 @@ Superimposed on unrelated jet-driven bowshock from LL6
    + N arm of the arc is missing
    + Very faint curved jet seems to go N of star
      + May curve through 90 degrees and end in a bow shock
+
+
+* New papers on proplyds
+
+** Sheehan:2016a - A VLA Survey for Faint Compact Radio Sources in the Orion Nebula Cluster
++ 2016ApJ...831..155S
++ Gives radio fluxes at 6cm, 3cm, 1.3cm for many sources
+
+
+** Boyden:2020a - Protoplanetary Disks in the Orion Nebula Cluster: Gas Disk Morphologies and Kinematics as seen with ALMA
++ 2020ApJ...894...74B
++ CO and HCO+ observations of several disks in proplyds
++ Includes 177-341W
++ Gas radii are generally larger than dust radii
++ Determine kinematic masses for the stars
+
+
+** Forbrich:2016a - The Population of Compact Radio Sources in the Orion Nebula Cluster
 
