@@ -66,6 +66,14 @@
 + I need to do them for the other groups too (just SW group so far)
 + And stitch them together and annotate then in Affinity Designer
 *** TODO Decide whether to do do alatude/planitude
++ Probably best not - just refer to Paper IV
+*** TODO Add in LP Ori and \theta^1 D
+*** TODO Make maps of KDEs of different sources
++ Bow shocks
++ Proplyds
++ Dark disks
++ All stars
++ MIR stars, etc
 * Return to LL catalog 2019
 + This time I am going to finish it
 
