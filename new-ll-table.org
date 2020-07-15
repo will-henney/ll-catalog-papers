@@ -65,6 +65,15 @@
 + These are the RGB high-pass filtered Robberto images that are generated in [[id:171A91D5-C0D6-4411-9DB2-C1AB76D18E61][New images of each group]]
 + I need to do them for the other groups too (just SW group so far)
 + And stitch them together and annotate then in Affinity Designer
+**** Also, use multicolor images to double-check for ambiguous objects
++ [ ] I have already ([2020-07-08 Wed]) found one source in SW group 022-635 where it looks like the so-called arc is actually a large-scale linear feature
++ Other faint objects in the SW group need to be rechecked too:
+  + 4582-635
+  + 014-414
+  + 041-637
+  + 065-502 - probably real, but very very faint
+  + 083-435 
+  + 117-421 - this actually looks *more* real on the large-scale image
 *** TODO Decide whether to do do alatude/planitude
 + Probably best not - just refer to Paper IV
 *** TODO Add in LP Ori and \theta^1 D

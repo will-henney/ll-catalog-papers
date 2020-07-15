@@ -26,6 +26,8 @@
 + This has lots of moving filaments
 + But they are not the principal arc, rather they are inside it
 + Seem to be coming from half way between the two proplyds
++ I have traced the arcs from the 2015 Bally images
+  + [[file:lv2-moving-arcs-2015.reg]]
 
 * Other objects with interesting motions
 ** 160-353 - the spinning cartwheel
