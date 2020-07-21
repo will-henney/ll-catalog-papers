@@ -40,25 +40,41 @@
   + Searched lots of tables from NIT, optical, x-ray papers
 + But a complementary way would be to use ~astroquery~ to search simbad for each source
 
-*** Do all measurements for the new sources
+** Things for Will to do
+
+*** DONE Decide on whether to change the groupings
+CLOSED: [2020-07-20 Mon 17:39]
+Merged SW and Far W groups into a single W group for now at least
+*** Recreate figures for the new sources 
++ Diagnostic graphs by spatial group
+  + [[id:761C80D7-EBD1-46FC-87B9-26CF28BD6201][Repeat the earlier diagnostic graphs, but classifying by spatial group]]
+  + I have combined the SW and Far W groups and re-run all these plots
+  + And made the PA vs D graph have the spatial classes too 
+**** Do all measurements for the new sources
 + There seem to be various steps in generating the table of sources
   1. ~arcs-summary.tab~ generated how?
-  2. Combine Luis and Jorge source to give ~arcs-summary-merge.tab~
+     - By ~arcs-summary.py~ in ~luis-programas/~
+     - [2020-07-20 Mon] Tested that this still works
+     - It automatically picks up the fitted arcs from the relevant folders
+  2. Combine Luis and Jorge source to give ~arcs-summary-merge.ecsv~
+     + [2020-07-20 Mon] Checked that this procedure (babel block) still works
+       + It uses ~ll-data.json~ to correct some of the names to canonical form
+     + *All ascii tables now should move to ECSV format where possible* [2020-07-20 Mon]
+       + This allows metadata and column types to be transferred, while maintaining human readability
      + This is then used in various programs in [[id:95244DE6-CB85-41CB-A6AC-286BEFE625B3][Look at correlations]] to make figures
      + But uses ~problem-source.txt~ and ~interproplyd.txt~ to remove ones that aren't regular bow shocks
-  3. Remove repetitions to give ~arcs-summary-unique.tab~
+       + [2020-07-20 Mon] I have updated ~problem-source.txt~ to include the newly canceled sources
+  3. Remove repetitions to give ~arcs-summary-unique.ecsv~
      + This is then used to make the table of stellar sources
-  4. There is also an ~arcs-summary-classify.tab~
-     + [ ] How is this related?
+  4. There is also an ~arcs-summary-classify.ecsv~
+     + [X] How is this related?
+       + Has an extra column with group classification, decided by conditions on distance and PA
+       + Also adds a classification for problem and interproplyd sources
   5. Latex tables are generated in [[id:F5BEFDCB-D776-4CD5-B6BA-E93439AF7A8F][Output latex figures with the individual sources]]
      + This writes files to the ~catalog-paper/~ folder of the ~orion-bowshock-catalog~ repo
      + They will have to be copied to this repo by hand
 
 
-
-** Things for Will to do
-
-*** TODO Decide on whether to change the groupings
 
 *** TODO Are there any more Bally fields to check through?
 *** TODO Make new figures for each group
@@ -75,6 +91,7 @@
   + 083-435 
   + 117-421 - this actually looks *more* real on the large-scale image
 *** TODO Decide whether to do do alatude/planitude
++ In principle, we could use the circle-fit routines on these
 + Probably best not - just refer to Paper IV
 *** TODO Add in LP Ori and \theta^1 D
 *** TODO Make maps of KDEs of different sources
@@ -83,6 +100,7 @@
 + Dark disks
 + All stars
 + MIR stars, etc
++ Molecular gas
 * Return to LL catalog 2019
 + This time I am going to finish it
 
@@ -94,7 +112,8 @@
      - [X] Copied all the Bally fields that end ~wcs.fits~
      - [ ] But need to get some more since the list is not complete
 2. Re-organize the groups
-   - Maybe merge SW and FW groups into a "West" group
+   - [X] Maybe merge SW and FW groups into a "West" group
+     - Yes, this makes sense since the new sources fill in the gap between these two
 3. Do arc fits for the new objects
    - Do we want to automate the arc tracing
      - This might not be possible for all sources - is this good or bad?
