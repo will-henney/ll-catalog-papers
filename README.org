@@ -1,0 +1,17 @@
+* The Orion Bow Shock Catalog Paper
+
++ Grand reorganized version ([2021-06-15 Tue]).
++ Now everything is organized neatly in folders
+
+** Contents of this repo
++ [[file:paper01]] The new home for the first paper (currently empty)
++ [[file:doc]] Miscellaneous ~.org~ files of  documentation:
+  + [[file:doc/new-ll-table.org]] New version of the big table that I was working on with Nahiely
+    + Is this the most recent version, or is there something better in the LuisBowshocks repo?
+  + [[file:doc/arc-proper-motions.org]] Some notes on the proper motions on arcs (or lack thereof), based on multi-epoch HST images.  This should be checked for ruling out some sources as true stationary arcs
++ [[file:description-notes/]] Various LaTeX files of source descriptions that Luis has been working on.  All such files should go here from now on, and not in the LuisBowshocks repo
++ [[file:ds9]] Backup and region files for SAOImageDS9. This also includes material that used to be in a folder called ~Material-from-LuisBowshocks~
++ [[file:original-papers/]] The three original papers from years ago
+  + [[file:original-papers/cat-paper/]] The catalog paper, which will be the basis for the first paper
+  + [[file:original-papers/stat-paper/]]
+  + [[file:original-papers/spiral-paper/]]
