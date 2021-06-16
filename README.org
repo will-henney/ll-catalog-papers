@@ -4,7 +4,8 @@
 + Now everything is organized neatly in folders
 
 ** Contents of this repo
-+ [[file:paper01]] The new home for the first paper (currently empty)
++ [[file:paper01]] The new home for the first paper
+  + [[file:paper01/new-ll-cat-paper.tex]]
 + [[file:doc]] Miscellaneous ~.org~ files of  documentation:
   + [[file:doc/new-ll-table.org]] New version of the big table that I was working on with Nahiely
     + Is this the most recent version, or is there something better in the LuisBowshocks repo?
