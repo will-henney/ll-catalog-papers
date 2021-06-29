@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Bally} {et~al.}(2006){Bally}, {Licht}, {Smith}, \&
@@ -19,8 +19,8 @@
 
 \bibitem[{{Da Rio} {et~al.}(2009){Da Rio}, {Robberto}, {Soderblom}, {Panagia},
   {Hillenbrand}, {Palla}, \& {Stassun}}]{Da-Rio:2009a}
-{Da Rio}, N., {Robberto}, M., {Soderblom}, D.~R., {Panagia}, N., {Hillenbrand},
-  L.~A., {Palla}, F., \& {Stassun}, K. 2009, \apjs, 183, 261
+{Da Rio}, N., {Robberto}, M., {Soderblom}, D.~R., {et~al.} 2009, \apjs, 183,
+  261
 
 \bibitem[{{Gull} \& {Sofia}(1979)}]{Gull:1979a}
 {Gull}, T.~R., \& {Sofia}, S. 1979, \apj, 230, 782
@@ -30,6 +30,9 @@
 {Henney}, W.~J., {Garc{\'{\i}}a-D{\'{\i}}az}, M.~T., {O'Dell}, C.~R., \&
   {Rubin}, R.~H. 2013, \mnras, 428, 691
 
+\bibitem[{{Hillenbrand}(1997)}]{Hillenbrand:1997}
+{Hillenbrand}, L.~A. 1997, \aj, 113, 1733
+
 \bibitem[{{Laques} \& {Vidal}(1979)}]{Laques:1979a}
 {Laques}, P., \& {Vidal}, J.~L. 1979, \aap, 73, 97
 
@@ -38,6 +41,11 @@
 
 \bibitem[{{O'Dell} \& {Wong}(1996)}]{ODell:1996a}
 {O'Dell}, C.~R., \& {Wong}, K. 1996, \aj, 111, 846
+
+\bibitem[{{Parihar} {et~al.}(2009){Parihar}, {Messina}, {Distefano},
+  {Shantikumar}, \& {Medhi}}]{Parihar:2009}
+{Parihar}, P., {Messina}, S., {Distefano}, E., {Shantikumar}, N.~S., \&
+  {Medhi}, B.~J. 2009, \mnras, 400, 603
 
 \bibitem[{{Ricci} {et~al.}(2008){Ricci}, {Robberto}, \&
   {Soderblom}}]{Ricci:2008a}
@@ -54,7 +62,8 @@
   {Feigelson}, {Stauffer}, {Meyer}, {Reggiani}, {Krist}, {Manara},
   {Romaniello}, {Hillenbrand}, {Ricci}, {Palla}, {Najita}, {Ananna},
   {Scandariato}, \& {Smith}}]{Robberto:2013a}
-{Robberto}, M., {et~al.} 2013, \apjs, 207, 10
+{Robberto}, M., {Soderblom}, D.~R., {Bergeron}, E., {et~al.} 2013, \apjs, 207,
+  10
 
 \bibitem[{{Smith} {et~al.}(2005){Smith}, {Bally}, {Shuping}, {Morris}, \&
   {Kassis}}]{Smith:2005a}
