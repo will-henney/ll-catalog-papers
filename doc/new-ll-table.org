@@ -128,20 +128,25 @@ Merged SW and Far W groups into a single W group for now at least
    - Where are the files?
    - Presumably on external disk
      - [X] Copied all the Bally fields that end ~wcs.fits~
-     - [ ] But need to get some more since the list is not complete
+     - [X] But need to get some more since the list is not complete
+       - [2021-07-27 Tue] Now decided that we have enough sources
 2. Re-organize the groups
    - [X] Maybe merge SW and FW groups into a "West" group
      - Yes, this makes sense since the new sources fill in the gap between these two
-3. Do arc fits for the new objects
+3. [X] Do arc fits for the new objects
    - Do we want to automate the arc tracing
      - This might not be possible for all sources - is this good or bad?
      - It would automatically weed out more problematic sources
-4. Association with stellar sources
-   - Write a program to do this using ~astroquery~ perhaps
-5. Reorganize the tables
+4. [-] Association with stellar sources
+   - [X] Luis found correspondence with stellar sources in different catalogs
+   - [-] Incorporate this data into the tables 
+5. [ ] Reorganize the tables
    - Would it be better to have a single table of all sources, ordered by RA?
 6. Regenerate the figures
-   - Find where they come from in the other projects
+   - [X] Find where they come from in the other projects
+   - [-] Fix the coordinates of 364-411
+     - This is in the Robberto field in the S
+     - We need to find out whether there was any special tratement for LL7 and make sure to do the same for this source
 7. Division into papers
    - Catalog paper should not have much else
      - Where to publish? RevMex maybe
