@@ -4,14 +4,14 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("emulateapj" "iop" "apj")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("newtxmath" "varg") ("babel" "spanish" "es-minimal" "english") ("inputenc" "utf8")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+                     '(("babel" "spanish" "es-minimal" "english") ("inputenc" "utf8")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -23,8 +23,6 @@
     "fig-stamps-03-north"
     "table-sort-04-northwest"
     "fig-stamps-04-northwest"
-    "table-sort-05-southwest"
-    "fig-stamps-05-southwest"
     "table-sort-06-west"
     "fig-stamps-06-west"
     "table-sort-07-south"
@@ -36,8 +34,7 @@
     "amsmath"
     "emulateapj"
     "emulateapj10"
-    "newtxmath"
-    "newtxtext"
+    "txfonts"
     "babel"
     "inputenc"
     "natbib"
@@ -68,20 +65,21 @@
     "tab:programs"
     "fig:r0-rc-method"
     "fig:pos-image"
-    "fig:size-v-distance"
+    "fig:PA-v-distance"
     "sec:catalog"
     "sec:lv-group"
     "sec:se-group"
     "sec:n-group"
     "sec:nw-group"
-    "sec:sw-group"
     "sec:w-group"
     "sec:s-group"
     "sec:interproplyd-group"
+    "sec:problematic-objects"
     "sec:problematic-group"
     "sec:notshell"
     "sec:discuss"
     "fig:bow-proplyd-star-ratios"
+    "fig:size-v-distance"
     "fig:PA-v-PA"
     "fig:A-v-q"
     "fig:spiral-bars"

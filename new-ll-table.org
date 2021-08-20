@@ -1,0 +1,393 @@
+
+* Return to LL catalog again 2020
+
+** Organization of material
++ This repo
+  + https://github.com/will-henney/ll-catalog-papers
+  + Incudes the following:
+    + the catalog paper itself
+    + the latest tables of bow shocks
+    + discussion of our plans and logs of work done
++ The repo with most of the original work
+  + https://github.com/will-henney/orion-bowshock-catalog
+  + That is where we can carry on doing the main work
+  + Although it is very disorganised
+  + Everything is documented in ~luis-angel-ll.org~
+  + We need to be careful with the size of the repo
+    + Limit for Github is 1 GB
+    + Currently repo is 724 MB
+    + But folder itself is 3GB on my disk, so there must be a lot of things that are excluded
+      + The ~.gitignore~ excludes everything, then re-allows some specific folders
+      + So it maybe that the repo is missing some things that Luis needs
+        + All the folders like ~j8oc01010_wcs~ are missing
+          + They can be quite large since they contain lots of FITS and PDF files (about 1 MB each)
+          + [ ] Need to find a way to share these folders
+          + Or possibly, Luis can regenerate these hiimdelf locally
++ Large FITS image files
+  + We cannot keep very large files (> 100 MB) in the git repo
+  + This includes the Bally images (300 MB) and the Robberto images (1 GB)
+  + Most of these files are in the ~OrionTreasury/~ folder
+    + Total size is 114 GB
+    + For Will, this is at [[file:~/Work/OrionTreasury/]]
+    + For Luis it is at *where?*
+
+
+** Things for Luis Ángel to do
+
+*** Find info on stellar sources
++ I already did some work on this
+  + See [[id:F7BCAB63-E507-48FD-B594-09F82ED6F7A3][Find the coincident stellar sources for each arc]] in ~luis-angel-ll.org~
+  + Searched lots of tables from NIT, optical, x-ray papers
++ But a complementary way would be to use ~astroquery~ to search simbad for each source
+
+** Things for Will to do
+
+*** Using circle-fit to redo all the curve fits
++ [X] Add it as a submodule to the repository
++ [ ] Is this done now?
+
+*** DONE Decide on whether to change the groupings
+CLOSED: [2020-07-20 Mon 17:39]
+Merged SW and Far W groups into a single W group for now at least
+*** Recreate figures for the new sources 
++ Diagnostic graphs by spatial group
+  + [[id:761C80D7-EBD1-46FC-87B9-26CF28BD6201][Repeat the earlier diagnostic graphs, but classifying by spatial group]]
+  + I have combined the SW and Far W groups and re-run all these plots
+  + And made the PA vs D graph have the spatial classes too 
+**** Do all measurements for the new sources
++ There seem to be various steps in generating the table of sources
+  1. ~arcs-summary.tab~ generated how?
+     - By ~arcs-summary.py~ in ~luis-programas/~
+     - [2020-07-20 Mon] Tested that this still works
+     - It automatically picks up the fitted arcs from the relevant folders
+  2. Combine Luis and Jorge source to give ~arcs-summary-merge.ecsv~
+     + [2020-07-20 Mon] Checked that this procedure (babel block) still works
+       + It uses ~ll-data.json~ to correct some of the names to canonical form
+         + ~ll-data.json~ is generated from the org-mode table with name ~orion-ll-objects~
+         + This is the only thing that it uses ~ll-data.json~ for, so it is not necessary to add the new objects to that table, although maybe we should
+     + *All ascii tables now should move to ECSV format where possible* [2020-07-20 Mon]
+       + This allows metadata and column types to be transferred, while maintaining human readability
+     + This is then used in various programs in [[id:95244DE6-CB85-41CB-A6AC-286BEFE625B3][Look at correlations]] to make figures
+     + But uses ~problem-source.txt~ and ~interproplyd.txt~ to remove ones that aren't regular bow shocks
+       + [2020-07-20 Mon] I have updated ~problem-source.txt~ to include the newly canceled sources
+  3. Remove repetitions to give ~arcs-summary-unique.ecsv~
+     + This is then used to make the table of stellar sources
+  4. There is also an ~arcs-summary-classify.ecsv~
+     + [X] How is this related?
+       + Has an extra column with group classification, decided by conditions on distance and PA
+       + Also adds a classification for problem and interproplyd sources
+  5. Latex tables are generated in [[id:F5BEFDCB-D776-4CD5-B6BA-E93439AF7A8F][Output latex figures with the individual sources]]
+     + This writes files to the ~catalog-paper/~ folder of the ~orion-bowshock-catalog~ repo
+     + They will have to be copied to this repo by hand
+     + 
+
+
+
+*** TODO Are there any more Bally fields to check through?
+*** TODO Make new figures for each group
++ These are the RGB high-pass filtered Robberto images that are generated in [[id:171A91D5-C0D6-4411-9DB2-C1AB76D18E61][New images of each group]]
++ I need to do them for the other groups too (just SW group so far)
+  + And now that we have merged SW and Far W group, there is no SW group
++ And stitch them together and annotate then in Affinity Designer
+**** Also, use multicolor images to double-check for ambiguous objects
++ [ ] I have already ([2020-07-08 Wed]) found one source in SW group 022-635 where it looks like the so-called arc is actually a large-scale linear feature
++ Other faint objects in the SW group need to be rechecked too:
+  + 4582-635
+  + 014-414
+  + 041-637
+  + 065-502 - probably real, but very very faint
+  + 083-435 
+  + 117-421 - this actually looks *more* real on the large-scale image
+*** TODO Decide whether to do do alatude/planitude
++ In principle, we could use the circle-fit routines on these
++ Probably best not - just refer to Paper IV
+*** TODO Add in LP Ori and \theta^1 D
++ Do I really want to do this?
+*** TODO Make maps of KDEs of different sources
++ Bow shocks
++ Proplyds
++ Dark disks
++ All stars
++ MIR stars, etc
++ Molecular gas
+** Thoughts on the spiral pattern
+:PROPERTIES:
+:ID:       B6EF12C3-EDF2-4354-9276-109DA1E5D352
+:END:
++ Bow shocks trace the supersonic or transonic flows. 
+  + Two possible origins:
+    1. Photoevaporation or champagne flows
+       + This could be from the Bernoulli ratchet, for instance
+    2. Collimated outflows such as HH jets 
+* Return to LL catalog 2019
++ This time I am going to finish it
+
+
+** Plan of action
+1. Finish checking for new objects in the Bally fields
+   - Where are the files?
+   - Presumably on external disk
+     - [X] Copied all the Bally fields that end ~wcs.fits~
+     - [ ] But need to get some more since the list is not complete
+2. Re-organize the groups
+   - [X] Maybe merge SW and FW groups into a "West" group
+     - Yes, this makes sense since the new sources fill in the gap between these two
+3. Do arc fits for the new objects
+   - Do we want to automate the arc tracing
+     - This might not be possible for all sources - is this good or bad?
+     - It would automatically weed out more problematic sources
+4. Association with stellar sources
+   - Write a program to do this using ~astroquery~ perhaps
+5. Reorganize the tables
+   - Would it be better to have a single table of all sources, ordered by RA?
+6. Regenerate the figures
+   - Find where they come from in the other projects
+7. Division into papers
+   - Catalog paper should not have much else
+     - Where to publish? RevMex maybe
+     - Then we could put the catalog itself on Vizier
+   - Second paper with the correlations
+     - We have a correction to the f658n fluxes to remove [N II]
+   - Third paper with the spiral pattern
+
+* Reports of Skype meetings
+** [2016-09-28 Wed 10:30]
++ We revised the descriptions of the SW group
+  + Complete as far as 042-628
++ The NW group still needs to be checked over
+** [2016-10-05 Wed 10:54]
++ Complete as far as end of SW group
++ Several objects have been moved to the "ambiguous" category
+** [2016-10-14 Fri 12:10]
++ 142-301 (N group), 051-024 (NW group) and 101-233 (NW group) : three cases that seems to have external "arc" with shape similar to the one that was traced (internal)
+  It has to be mentioned. Where?
++ We revised all the groups looking for objects with ambiguous determination
+  + 173-236 (N group) - is moved to ambiguous (A) group, it is not clear if the structure is an arc or a hole
+  + 106-245 (NW group) - stays at NW group
+  + w014-414 (SW group) - stays at SW group, the tracing of the arc has to be reviewed
+  + 041-637 (SW group) - stays at SW. It is not a filamente due its shape is different from what is in its environment, this can be taken as evidence that the structure is related to the star.
+    The structure at the right has to be mentioned in the description.
+  + 066-652 (S group) - it is not clear, is moved to A group
+  + 131-046 (ambiguous group) - stays at A group, the "arc" could be just a continuos area that is being crossed by an extintion filament
++ All the other cases that already were moved to the A group stays there.
+** [2016-10-26 Wed]
++ Finished moving objects to the problematic group
++ Really finish SW group
+
+** [2016-11-09 Wed]
++ Finished Far West group
++ Started on North group, but not much progress
++ Discovered some new objects in the south east
+** [2016-11-17 Thu 09:10]-[2016-11-17 Thu 11:30]
++ Discovered 6 new arcs, in between SW and Far-W groups
+  + Might be best to merge these two groups
++ Looked for new arcs in the outer Bally ACS fields
+  + Started in the south, working north
+    :                  (11)
+    :       (3) .. (10) .. (19)
+    :    (2) .. (9) .. 18 ..  (26)
+    :         1 ..  17 ..   25
+    :      (6) .. 16 ..  (24)
+    :   (7) .. (15) .. (23)
+    : 8 ..  14 ..  (22)
+    :    13 ..  21
+    : 12 ..  20
+  + Fields still to check are in (parentheses)
+
+    
+  + Finished
+* Table of arcs 
+
+|         Source | Proplyd             | Star                 | Arc                     | Notes                                                                              |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | LV KNOT GROUP                                                                      |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|  158-323 (LV5) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  161-324 (LV4) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  163-317 (LV3) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+| 166-316 (LV2b) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  167-317 (LV2) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|        168-328 | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|  168-326 (LV1) | \Ricci{}            |                      | Bally (1998)            |                                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTHEAST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        169-338 | \Ricci{}            |                      | New                     | Very faint, well-defined                                                           |
+| 177-341 (HST1) | \Ricci{}            |                      | Bally (1998)            | Very faint, well-defined                                                           |
+|        180-331 | \Ricci{}            |                      | Bally (1998)            | Highly asymmetric                                                                  |
+|        189-329 | \Ricci{}            |                      | New                     | Very diffuse, north wing larger than south                                         |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | NORTH GROUP                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        142-301 | \Ricci{}            |                      | New                     | Longest proplyd tail pointg out \Theta^1 Ori A, very faint arc, non-continuous curvature |
+|        154-225 | \Ricci{}            |                      | New                     | Very faint, lumpy                                                                  |
+|        154-240 | \Ricci{}            |                      | New                     | Inner edge well-defined                                                            |
+|        159-221 | New                 |                      | New                     | Outer edge very diffuse, axis deviates from radial direction                       |
+|        163-222 | \Ricci{}            |                      | New                     | Very faint, small, eastern well-defined, western superimposed                      |
+|        165-235 | \Ricci{}            |                      | \Bally{}                | Very faint                                                                         |
+|        170-249 | \Ricci{}            |                      | New                     | Very faint                                                                         |
+|        178-258 | \Ricci{}            |                      | New                     | Well-defined, faint                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | NORTHWEST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4578-251 | No                  |                      | New                     | Asymmetric, double shell, outer shell fainter                                      |
+|        049-143 | \Ricci{}            |                      | New                     | Thick, circular, wings open,                                                       |
+|        051-024 | New                 |                      | New                     | Two shells                                                                         |
+|        072-134 | \Ricci{}            |                      | New                     | Designated 072-135 in \ODell{}, complex morphology                                 |
+|        073-227 | \Ricci{}            |                      | \Bally{}                |                                                                                    |
+|        074-229 | ?                   |                      | New                     | Probably binary of 073-227                                                         |
+|        101-233 | \Ricci{}            |                      | New                     | Designated 102-233 in \ODell{}, cumply shell                                       |
+|        102-157 | New                 |                      | New                     | Very faint arc, proplyd with very short tail                                       |
+|        106-245 | ?                   |                      | New                     | Outside HH 202                                                                     |
+|        109-246 | \Ricci{}            |                      | New                     | Designated 109-247 in \Bally{}, wing open, complex region                          |
+|        124-131 | \Ricci{}            |                      | New                     | Designated 123-132 in \ODell{}, very faint, not H\alpha                                 |
+|        132-053 | No                  |                      | New                     | Overlapping extinction filaments                                                   |
+|        206-043 | No                  |                      | New                     | Very faint, narrow                                                                 |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTHWEST GROUP                                                                    |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4582-635 | \Ricci{}            |                      | New                     | Very faint                                                                         |
+|       4596-400 | \Ricci{}            |                      | \Bally{}                | Designated 000-400 in \Bally{}                                                     |
+|        005-514 | \Ricci{}            |                      | \Bally{}                | Southeast wing has multiple filaments                                              |
+|        012-407 | No                  |                      | \Bally{}                | Thick, diffuse arc                                                                 |
+|        014-414 | No                  |                      | \Bally{}                | Double central star                                                                |
+|        022-635 | No                  |                      | New                     |                                                                                    |
+|        030-524 | ?                   |                      | \Bally{}                | Flat, asymmetric arc, apparent proplyd tail                                        |
+|        041-637 | No                  | Da Rio et al. 2009   | New                     | West wing of arc superimposed on unrelated filament                                |
+|        042-628 | \Ricci{}            |                      | New                     | Proplyd designated 038-627 in \Ricci{}.  Possible jet.                             |
+|        044-527 | \Ricci{}            |                      | \Bally{}                | Asymmetric. Jet parallel to proplyd axis.                                          |
+|  056-519 (LL1) | No                  |                      | Gull & Sofia (1979)     | Prototypical object.  Bright T Tauri star with jet (HH 888)                        |
+|        069-601 | \Ricci{}            |                      | \Bally{}                | Well-defined parabolic arc. Shape similar to LL1                                   |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | FAR WEST GROUP                                                                     |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       4285-458 | No                  |                      | New                     | Inner boundary not well defined                                                    |
+| 4408-639 (LL3) | ?                   |                      | Bally & Reipurth (2001) | Double-shell, possible proplyd tail                                                |
+| 4409-242 (LL2) | No                  |                      | Bally & Reipurth (2001) | Asymmetric arc; southern wing affected by bipolar jet (HH 505)                     |
+|       4417-653 | No                  |                      | New                     | NEW OBJECT 16 Nov 2016                                                             |
+| 4427-838 (LL4) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Outer wings may be affected by bipolar jet                                         |
+|       4468-605 | \Ricci{}            |                      | Bally et al. (2006)     | Bipolar jet parallel to axis                                                       |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | SOUTH GROUP                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|       066-3251 | \Ricci{}            |                      | New                     | Clearly in F555W filter                                                            |
+|       116-3101 | ?                   |                      | New                     | Possible proplyd tail, sharply, wing closed                                        |
+|       119-3155 | No                  |                      | New                     | Faint arc to the north                                                             |
+|       136-3057 | No                  |                      | New                     | Very diffuse                                                                       |
+|       138-3024 | No                  |                      | New                     | Thin, strong in blue and green filters                                             |
+|       203-3039 | No                  |                      | New                     | Faint, very open                                                                   |
+|       261-3018 | No                  |                      | New                     | Large, flat, diffuse, bright inner rim                                             |
+|        266-558 | \Ricci{}            |                      | \Bally{}                | Double shell, knotty and open wings                                                |
+|        305-811 | ?                   |                      | \Bally et al. (2006)    | Asymmetric, extremely faint, probably proplyd tail                                 |
+|       308-3036 | Bally et al. (2006) |                      | Bally et al. (2006)     | Nearly circular inner shock                                                        |
+|  315-816 (LL5) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Double shell, bright inner rim                                                     |
+| 329-3021 (LL6) | Bally et al. (2006) |                      | Bally & Reipurth (2001) | Wings opened and extended, one-side jet                                            |
+|       344-3020 | Bally et al. (2006) |                      | Bally et al. (2006)     | Very faint, bipolar jet                                                            |
+| 351-3349 (LL7) | \Ricci{}            |                      | Bally & Reipurth (2001) | Perpendicular jet, wings opened                                                    |
+|       362-3137 | New                 | Da Rio et al. (2009) | New                     | Doble shell                                                                        |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | INTERPROPLYD SHELLS                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        160-350 | \Ricci{}            |                      | Henney (2002)           | Primary 159-350                                                                    |
+|        162-456 | ?                   |                      | Reipurth (2007)         | Primary 162-456NE                                                                  |
+|       168-326N | \Ricci{}            |                      | Graham et al (2002)     | Primary 168-326 (LV1)                                                              |
+|        173-341 | \Ricci{}            |                      | New?                    | Primary 177-341 (HST1)                                                             |
+|        175-321 | No                  |                      | New                     | Primary th1D                                                                       |
+|        204-330 | \Ricci{}            |                      | New                     | Primary 205-330, very similar to 168-326                                           |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|                |                     |                      |                         | PROBLEMATIC OBJECTS                                                                |
+|----------------+---------------------+----------------------+-------------------------+------------------------------------------------------------------------------------|
+|        065-502 | New                 |                      | New                     | Questionable detection of arc. Proplyd with short tail                             |
+|        066-652 | \Ricci{}            |                      | Reipurth (2007)         | Small, primary 066-652N                                                            |
+|        083-435 | New                 |                      | New                     | Very faint, diffuse outer edge                                                     |
+|        117-421 | \Ricci{}            |                      | New                     | Very faint, inner edge only                                                        |
+|        121-434 | \Ricci{}            |                      | New                     | Compact                                                                            |
+|        131-046 | \Ricci{}            |                      | New                     | Possible broad shell, confusion with extinction filaments                          |
+|        173-236 | \Ricci{}            |                      | New                     | Designated 174-236 in \Bally{}, irregular and wavy proplyd tail                    |
+|        212-400 | \Ricci{}            |                      | New                     | Weak evidence for inner edge only                                                  |
+
+
+
+
+* TODO Objects with multiple arcs
++ We should maybe discuss these
+  + 142-301 (N group),
+  + 051-024 (NW group)
+  + and 101-233 (NW group) 
++ Three cases that seems to have external "arc" with shape similar to the one that was traced (internal)
+
+
+* TODO Make a separate .bib file with the references that we need
+
+* Additional notes on particular objects
+** 308-3036
+Superimposed on unrelated jet-driven bowshock from LL6
+* Checking remaining Bally fields
++ [X] 20
+  + No arcs
+  + Some HH knots in the S that don't seem to be mentioned anywhere
++ [X] 12
+  + No arcs
++ [X] 13
+  + No arcs
++ [X] 21
+  + No arcs
++ [X] 08
+  + Only arcs we already discovered
++ [X] 14
+  + Two previous detections are certainly arcs:
+    + 203-3039
+    + 116-3101
+  + Four doubtful ones that are already in the catalog
+  + No new detections
++ [ ] 22
+
+* New arc discoveries
+1. [X] 4417-653
+   + [2016-11-16 Wed] Discovered this while looking at jet knots for the Alba project
+   + Located 20 arcsec to SE of LL3
+   + Very strange that I never saw it before
+2. [X] 4491-627
+   + 5:34:49.074 -5:26:26.65
+   + Looks legit
+     + But there is another bowshock nearby, that looks like a HH object, so must be careful
+3. [X] 4550-659
+   + Coordinates 5:34:55.026 -5:26:58.88
+   + This is a definite detection
+   + Has jet knots too
+     + Possibly two jets. Spike to NW and smaller one to SE.  Knots to E.
+     + Also, possible bowshock overlying end of S wing of arc
+4. [X] 4531-628
+   + 5:34:53.072 -5:26:27.51
+   + Pretty definite that the arc is real
+   + Arc is very small (R0  ~= 0.64 arcsec)
+5. [X] 4520-419
+   + 5:34:52.005 -5:24:18.86
+   + Beautiful arc (R0 ~= 1.2 arcsec)
+     + Wide radius of curvature
+   + Looks like it might be a proplyd
+     + Small stubby tail
+6. [X] 4505-336
+   + 5:34:50.484 -5:23:35.52
+   + N arm of the arc is missing
+   + Very faint curved jet seems to go N of star
+     + May curve through 90 degrees and end in a bow shock
+
+
+* New papers on proplyds
+
+** Sheehan:2016a - A VLA Survey for Faint Compact Radio Sources in the Orion Nebula Cluster
++ 2016ApJ...831..155S
++ Gives radio fluxes at 6cm, 3cm, 1.3cm for many sources
+
+
+** Boyden:2020a - Protoplanetary Disks in the Orion Nebula Cluster: Gas Disk Morphologies and Kinematics as seen with ALMA
++ 2020ApJ...894...74B
++ CO and HCO+ observations of several disks in proplyds
++ Includes 177-341W
++ Gas radii are generally larger than dust radii
++ Determine kinematic masses for the stars
+
+
+** Forbrich:2016a - The Population of Compact Radio Sources in the Orion Nebula Cluster
+
