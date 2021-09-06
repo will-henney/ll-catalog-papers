@@ -85,6 +85,7 @@
 \section{Introduction}
 \label{sec:intro}
 
+
 \section{Observations}
 \label{sec:observ}
 
@@ -100,9 +101,21 @@
   & F656N, F658N, F502N, F673N, F631N, F547M \\
   2004 & ACS/WFC & GO~9825 & \(20' \times 20'\) & \(0.05''\) & F658N \\
   2004--5 & ACS/WFC & GO~10246 & \(25' \times 30'\) & \(0.05''\) & F658N, F435W, F555W, F775W, F850LP \\
-  2004--5 & WFPC2/WFC & GO~10246 & \(25' \times 30'\) & \(0.1''\) & F656N 
+  2004--5 & WFPC2/WFC & GO~10246 & \(25' \times 30'\) & \(0.1''\) & F656N \\
+  2015 & WFC3/UVIS & GO~13419 & \(8' \times 12'\) & \(0.05''\) & F656N, F225W, F336W, F280N, F373N
   \enddata
 \end{deluxetable*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{combo-highpass-sw}
+  \caption{
+    A particularly rich region of the Orion Nebula, centered on LL~Ori,
+    the largest member of the Western group of stationary arcs.
+  }
+  \label{fig:combo-highpass-sw}
+\end{figure*}
+
 
 We have attempted to identify and characterize all stationary
 emission-line arcs in archival HST imaging observations of
@@ -127,13 +140,17 @@ signal-to-noise of these observations is significantly worse than
 the ACS images, but they have the important advantage that the WFPC2
 F656N filter is considerably narrower (\(\approx 5\)~\AA) than
 the ACS F658N filter (\(\approx 15\)~\AA) and suffers relatively
-little contamination from \nii{}.  Finally, for regions in the
+little contamination from \nii{}.  For regions in the
 core of the nebula, we have used older WFPC2 images from programs
 GTO~5085 \citep{ODell:1996a} and GO~5469 \citep{Bally:1998a}.
 These offer two advantages for the study of the bowshocks closest
 to the Trapezium OB stars: shorter exposure times mean that the
 bright stars are less saturated, and images were obtained in a much
-wider range of emission line filters.  
+wider range of emission line filters.
+Finally, for regions in the core and southern outskirts we have used the
+Cycle~21 program GO~13419 \citep{Bally:2018c} to check for high proper motions
+over the 21~year baseline 1994--2015,
+which would rule out any given filament being a stationary arc.
 
 
 \newcommand\Rc{\ensuremath{R_{\mathrm{c}}}}
@@ -188,7 +205,7 @@ condition \(|\theta_j - \theta_0| \le 90^\circ\) are used in the fit.
 \begin{figure*}
   \includegraphics[width=\linewidth]{ll-positions-zoom-2020}
   \caption{Position of bow shock arcs. Zoomed area.}
-  \label{fig:pos-image}
+  \label{fig:pos-image-zoom}
 \end{figure*}
 
 \begin{figure*}
@@ -854,28 +871,28 @@ associated with small emission arcs which are formed by the interactions
 between two individual photoevaporation flows.
     
 \textit{160-350.} This was previously reported as an irregular proplyd
-by \citet{Odell:1994} and was designated 159-350. Later, \citet{Ricci:2008a}
+by \citet{ODell:1994a} and was designated 159-350. Later, \citet{Ricci:2008a}
 cataloged it as a binary system and ionized disk seen in emission.
 The 159-350 outflow interact with the 160-350 flow producing a small
 emission arc.  
 
 \textit{162-456.} \citet{ODell:1996a} cataloged this object as a stellar
 source and designated it 162-457. It was listed as a pre-main-sequence
-binary star by \citet{Reipurth:2007}. A small emission arc is formed by
+binary star by \citet{Reipurth:2007a}. A small emission arc is formed by
 the interaction of the flows come from 162-456 and 162-456NE, the latter
 located in the Northeast of 162-456.     
 
 \textit{168-326N.} This source was previously reported as an unclear object
-due to saturation by \citet{Odell:1994}. Later, it was catalogued as a proplyd
+due to saturation by \citet{ODell:1994a}. Later, it was catalogued as a proplyd
 and binary system by \citet{Ricci:2008a}. Comparing the 5 GHz radio emission
 to the \ha{} and \oiii{} $\lambda$5007 emission is perceptive a radio source
 between southeast radio source 168-326SE and the northwest radio source
 168-326NW. This structure is probably an interacting zone between the two
-components \citep{Graham:2002}. From Fig. ?? in not possible to see
+components \citep{Graham:2002a}. From Fig. ?? in not possible to see
 any emission arc because the system is very affected by saturation.    
 
 \textit{173-342.} This was classified as a semi-stellar and elongated
-object with diffuse boundary and appears designated 173-341 \citet{Odell:1994}.
+object with diffuse boundary and appears designated 173-341 \citet{ODell:1994a}.
 This source was identified as a proplyd and binary system by \citet{Ricci:2008a}.
 The emission arc is probably formed by the interaction of 173-342 with
 177-341 (HST1). The arc emission shock in clearly visible in the image. 
@@ -1027,7 +1044,7 @@ the more distant objects are mainly to the south.
   \centering
   \includegraphics[width=\linewidth]{will-H-vs-q-class}
   \caption{Bowshock relative shell thickness versus relative size.}
-  \label{fig:PA-v-PA}
+  \label{fig:H-v-q}
 \end{figure}
 
 \begin{figure}

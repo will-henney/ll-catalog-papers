@@ -5,13 +5,13 @@
                      '(("emulateapj" "iop" "apj")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("babel" "spanish" "es-minimal" "english") ("inputenc" "utf8")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -25,6 +25,7 @@
     "fig-stamps-04-northwest"
     "table-sort-06-west"
     "fig-stamps-06-west"
+    "fig-stamps-06-west-continued"
     "table-sort-07-south"
     "fig-stamps-07-south"
     "table-sort-00-interproplyd"
@@ -63,8 +64,10 @@
     "sec:intro"
     "sec:observ"
     "tab:programs"
+    "fig:combo-highpass-sw"
     "fig:r0-rc-method"
     "fig:pos-image"
+    "fig:pos-image-zoom"
     "fig:PA-v-distance"
     "sec:catalog"
     "sec:lv-group"
@@ -82,6 +85,7 @@
     "fig:size-v-distance"
     "fig:PA-v-PA"
     "fig:A-v-q"
+    "fig:H-v-q"
     "fig:spiral-bars"
     "fig:3d-twin")
    (LaTeX-add-bibliographies

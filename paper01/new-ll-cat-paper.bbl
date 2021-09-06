@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{20}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Bally} {et~al.}(2006){Bally}, {Licht}, {Smith}, \&
@@ -12,6 +12,9 @@
 \bibitem[{{Bally} \& {Reipurth}(2001)}]{Bally:2001a}
 {Bally}, J., \& {Reipurth}, B. 2001, \apj, 546, 299
 
+\bibitem[{{Bally} \& {Reipurth}(2018)}]{Bally:2018c}
+---. 2018, Research Notes of the American Astronomical Society, 2, 46
+
 \bibitem[{{Bally} {et~al.}(1998){Bally}, {Sutherland}, {Devine}, \&
   {Johnstone}}]{Bally:1998a}
 {Bally}, J., {Sutherland}, R.~S., {Devine}, D., \& {Johnstone}, D. 1998, \aj,
@@ -21,6 +24,11 @@
   {Hillenbrand}, {Palla}, \& {Stassun}}]{Da-Rio:2009a}
 {Da Rio}, N., {Robberto}, M., {Soderblom}, D.~R., {Panagia}, N., {Hillenbrand},
   L.~A., {Palla}, F., \& {Stassun}, K. 2009, \apjs, 183, 261
+
+\bibitem[{{Graham} {et~al.}(2002){Graham}, {Meaburn}, {Garrington}, {O'Brien},
+  {Henney}, \& {O'Dell}}]{Graham:2002a}
+{Graham}, M.~F., {Meaburn}, J., {Garrington}, S.~T., {O'Brien}, T.~J.,
+  {Henney}, W.~J., \& {O'Dell}, C.~R. 2002, \apj, 570, 222
 
 \bibitem[{{Gull} \& {Sofia}(1979)}]{Gull:1979a}
 {Gull}, T.~R., \& {Sofia}, S. 1979, \apj, 230, 782
@@ -49,6 +57,11 @@
   {Shantikumar}, \& {Medhi}}]{Parihar:2009}
 {Parihar}, P., {Messina}, S., {Distefano}, E., {Shantikumar}, N.~S., \&
   {Medhi}, B.~J. 2009, \mnras, 400, 603
+
+\bibitem[{{Reipurth} {et~al.}(2007){Reipurth}, {Guimarães}, {Connelley}, \&
+  {Bally}}]{Reipurth:2007a}
+{Reipurth}, B., {Guimarães}, M.~M., {Connelley}, M.~S., \& {Bally}, J. 2007,
+  \aj, 134, 2272
 
 \bibitem[{{Ricci} {et~al.}(2008){Ricci}, {Robberto}, \&
   {Soderblom}}]{Ricci:2008a}
