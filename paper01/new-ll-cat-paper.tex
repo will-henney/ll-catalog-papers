@@ -1,6 +1,6 @@
 \pdfoutput=1
 \RequirePackage{amsmath}
-\documentclass[iop, apj]{emulateapj}
+\documentclass[apj, twocolumn]{aastex63}
 %\usepackage[varg]{newtxmath}
 %\usepackage{newtxtext}
 \usepackage{txfonts}
@@ -9,6 +9,24 @@
 \usepackage{natbib}
 \usepackage{microtype}
 \usepackage{hyperref}
+
+\usepackage{savesym}
+\savesymbol{tablenum}
+\usepackage{siunitx}
+\restoresymbol{SIX}{tablenum}
+
+% Tweaks to siunitx configuration
+\sisetup{
+  % explicit""+" is useful for velocities
+  retain-explicit-plus = true,
+  % prefer 10^6 over 1 x 10^6
+  retain-unity-mantissa = false,
+  % Use x +/- e instead of x(e)  
+  separate-uncertainty = true,
+  % Make sure to pick up bold font when used in section heading for instance
+  detect-weight = true,
+}
+
 \graphicspath{{figs/}, {../original-papers/figs/},  {../}, {../luis-programas}}
 \bibliographystyle{apj}
 
@@ -99,6 +117,7 @@
   & F656N, F658N, F502N, F547M \\
   1994--5 & WFPC2/PC & GO~5469 & \(1' \times 2'\) & \(0.045''\)
   & F656N, F658N, F502N, F673N, F631N, F547M \\
+  2004 & ACS/WFC & GO~10057 & \(1' \times 1'\) & \(0.045''\) &  FR505N \\
   2004 & ACS/WFC & GO~9825 & \(20' \times 20'\) & \(0.05''\) & F658N \\
   2004--5 & ACS/WFC & GO~10246 & \(25' \times 30'\) & \(0.05''\) & F658N, F435W, F555W, F775W, F850LP \\
   2004--5 & WFPC2/WFC & GO~10246 & \(25' \times 30'\) & \(0.1''\) & F656N \\
@@ -197,6 +216,31 @@ points \((\alpha_i, \delta_i)\).   Only those edge points satisfying the
 condition \(|\theta_j - \theta_0| \le 90^\circ\) are used in the fit.
 
 
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{combo-highpass-trap}
+  \caption{
+    Multi-epoch image of the central core of the Orion Nebula,
+    showing the Trapezium group and part of the Southeast group of arcs.
+    The first epoch is shown in red, the second epoch in green, and the difference in blue.
+    As a result, bright stationary features appear as yellow,
+    whereas features with high proper motion
+    appear blue on the leading edge and red on the trailing edge.
+    For the majority of the field the two epochs are 1995-03 and 2004-01 in \oiii{} filters,
+    whereas for the regions outside the thin dashed lines
+    the two epochs are 2005-04 and 2015-01 in \ha{} filters.
+    In all cases, the images were high-pass filtered with a kernel width of \SI{1}{arcsec}.
+  }
+  \label{fig:combo-highpass-trap}
+\end{figure*}
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{combo-highpass-nw}
+  \caption{
+    As Figure~\ref{fig:combo-highpass-sw} but for the Northwest group of arcs.
+  }
+  \label{fig:combo-highpass-nw}
+\end{figure*}
 \begin{figure*}
   \centering
   \includegraphics[width=\linewidth]{combo-highpass-ll7}
