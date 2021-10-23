@@ -71,6 +71,7 @@
     "fig:r0-rc-method"
     "fig:combo-highpass-trap"
     "fig:combo-highpass-nw"
+    "fig:combo-highpass-s"
     "fig:combo-highpass-ll7"
     "fig:pos-image"
     "fig:pos-image-zoom"
