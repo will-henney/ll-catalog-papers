@@ -69,6 +69,7 @@
     "fig:combo-highpass-sw"
     "fig:r0-rc-method"
     "fig:combo-highpass-trap"
+    "fig:combo-highpass-n"
     "fig:combo-highpass-nw"
     "fig:combo-highpass-far-w"
     "fig:combo-highpass-s"
